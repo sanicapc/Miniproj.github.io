@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
-	<h1>Shopping Cart</h1>
+	<div class=”Header”>
+        <h3 class=”Heading”>Shopping Cart</h3>
+        <h5 class=”Action”>Remove all</h5>
+        </div>
 <body>
- <div class="shopping-cart">
+ <div class="Cart-Container">
 </body>
 	
 <style>
@@ -21,6 +24,29 @@
  background-color: #ffffff;
  border-radius: 20px;
  box-shadow: 0px 25px 40px #1687d933;
+}
+	
+.Header{
+ margin: auto;
+ width: 90%;
+ height: 15%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.Heading{
+ font-size: 20px;
+ font-family: ‘Open Sans’;
+ font-weight: 700;
+ color: #2F3841;
+}
+.Action{
+ font-size: 14px;
+ font-family: ‘Open Sans’;
+ font-weight: 600;
+ color: #E44C4C;
+ cursor: pointer;
+ border-bottom: 1px solid #E44C4C;
 }
 </style>
 
