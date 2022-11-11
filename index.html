@@ -48,6 +48,65 @@
  cursor: pointer;
  border-bottom: 1px solid #E44C4C;
 }
+	
+.product{
+ margin: auto;
+ width: 90%;
+ height: 30%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.product-image{
+ width: 15%;
+ text-align: center;
+}
+.product-details{
+ height: 100%;
+}
+.product-title{
+ padding-top: 5px;
+ line-height: 10px;
+ font-size: 32px;
+ font-family: ‘Open Sans’;
+ font-weight: 800;
+ color: #202020;
+}
+.product-price{
+ line-height: 10px;
+ font-size: 18px;
+ font-family: ‘Open Sans’;
+ font-weight: 600;
+ color: #909090;
+	
+.product-quantity{
+ width: 15%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.btn{
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background-color: #d9d9d9;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 20px;
+ font-family: ‘Open Sans’;
+ font-weight: 900;
+ color: #202020;
+ cursor: pointer;
+}
+.count{
+ font-size: 20px;
+ font-family: ‘Open Sans’;
+ font-weight: 900;
+ color: #202020;
+}
+}
+
 </style>
 
   <div class="column-labels">
@@ -58,34 +117,36 @@
     <label class="product-removal">Remove</label>
     <label class="product-line-price">Total</label>
   </div>
-
+	
   <div class="product">
     <div class="product-image">
-      <img src="https://sc04.alicdn.com/kf/HTB1t9X3NpXXXXbbXXXXq6xXFXXXJ.jpg">
+      <img src="https://sc04.alicdn.com/kf/HTB1t9X3NpXXXXbbXXXXq6xXFXXXJ.jpg" style={{ height="120px" }}>
     </div>
     <div class="product-details">
       <div class="product-title">Plain Shirt</div>
     </div>
-    <div class="product-price">12.99</div>
-    <div class="product-quantity">
-      <input type="number" value="2" min="1">
+	  <div class="product-price">₹200</div>
+	  <div class="product-quantity">
+          <div class=”btn”>+</div>
+          <div class=”count”>2</div>
+          <div class=”btn”>-</div>
     </div>
     <div class="product-removal">
       <button class="remove-product">
         Remove
       </button>
     </div>
-    <div class="product-line-price">25.98</div>
+    <div class="product-line-price">₹400</div>
   </div>
 
   <div class="product">
     <div class="product-image">
-      <img src="https://www.ethnicplus.in/media/catalog/product/cache/4b64c75550b309a25deb6b05458d8553/s/k/sky_soft_net_lahenga_1_.jpeg">
+      <img src="https://www.ethnicplus.in/media/catalog/product/cache/4b64c75550b309a25deb6b05458d8553/s/k/sky_soft_net_lahenga_1_.jpeg" style={{ height="120px" }}>
     </div>
     <div class="product-details">
       <div class="product-title">Diamond bead lehenga</div>
     </div>
-    <div class="product-price">45.99</div>
+    <div class="product-price">₹4000</div>
     <div class="product-quantity">
       <input type="number" value="1" min="1">
     </div>
@@ -94,7 +155,7 @@
         Remove
       </button>
     </div>
-    <div class="product-line-price">45.99</div>
+    <div class="product-line-price">₹4000</div>
   </div>
 
   <div class="totals">
