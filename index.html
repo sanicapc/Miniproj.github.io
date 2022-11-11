@@ -106,6 +106,54 @@
  color: #202020;
 }
 }
+	
+hr{
+ width: 66%;
+ float: right;
+ margin-right: 5%;
+}
+.checkout{
+ float: right;
+ margin-right: 5%;
+ width: 28%;
+}
+.total{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+}
+.Subtotal{
+ font-size: 22px;
+ font-family: ‘Open Sans’;
+ font-weight: 700;
+ color: #202020;
+}
+.items{
+ font-size: 16px;
+ font-family: ‘Open Sans’;
+ font-weight: 500;
+ color: #909090;
+ line-height: 10px;
+}
+.total-amount{
+ font-size: 36px;
+ font-family: ‘Open Sans’;
+ font-weight: 900;
+ color: #202020;
+}
+.button{
+ margin-top: 5px;
+ width: 100%;
+ height: 40px;
+ border: none;
+ background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
+ border-radius: 20px;
+ cursor: pointer;
+ font-size: 16px;
+ font-family: ‘Open Sans’;
+ font-weight: 600;
+ color: #202020;
+}
 
 </style>
 
@@ -159,8 +207,20 @@
     </div>
     <div class="product-line-price">₹4000</div>
   </div>
+	
+	<hr> 
+ <div class=”checkout”>
+ <div class=”total”>
+ <div>
+ <div class=”Subtotal”>Sub-Total</div>
+ <div class=”items”>3 items</div>
+ </div>
+ <div class=”total-amount”>₹4400</div>
+ </div>
+ <button class=”button”>Checkout</button>
+ </div>
 
-  <div class="totals">
+ <! <div class="totals">
     <div class="totals-item">
       <label>Subtotal</label>
       <div class="totals-value" id="cart-subtotal">71.97</div>
@@ -179,8 +239,8 @@
     </div>
   </div>
       
-      <button class="checkout">Checkout</button>
+      <button class="checkout">Checkout</button> 
 
-</div>
+</div> >
 
 </html>
