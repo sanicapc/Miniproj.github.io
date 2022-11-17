@@ -1,246 +1,68 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<style>
-	body{
- margin: 0;
- padding: 0;
- background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
- height: 100vh;
- display: flex;
- justify-content: center;
- align-items: center;
-}
-.Cart-Container{
- width: 70%;
- height: 85%;
- background-color: #ffffff;
- border-radius: 20px;
- box-shadow: 0px 25px 40px #1687d933;
-}
-	
-.Header{
- margin: auto;
- width: 90%;
- height: 15%;
- display: flex;
- justify-content: space-between;
- align-items: center;
-}
-.Heading{
- font-size: 20px;
- font-family: ‘Open Sans’;
- font-weight: 700;
- color: #2F3841;
-}
-.Action{
- font-size: 14px;
- font-family: ‘Open Sans’;
- font-weight: 600;
- color: #E44C4C;
- cursor: pointer;
- border-bottom: 1px solid #E44C4C;
-}
-	
-.product{
- margin: auto;
- width: 90%;
- height: 30%;
- display: flex;
- justify-content: space-between;
- align-items: center;
-}
-.product-image{
- width: 15%;
- text-align: center;
-}
-.product-details{
- height: 100%;
-}
-.product-title{
- padding-top: 5px;
- line-height: 10px;
- font-size: 32px;
- font-family: ‘Open Sans’;
- font-weight: 800;
- color: #202020;
-}
-.product-price{
- line-height: 10px;
- font-size: 18px;
- font-family: ‘Open Sans’;
- font-weight: 600;
- color: #909090;
-	
-.product-quantity{
- width: 15%;
- display: flex;
- justify-content: space-between;
- align-items: center;
-}
-.btn{
- width: 40px;
- height: 40px;
- border-radius: 50%;
- background-color: #d9d9d9;
- display: flex;
- justify-content: center;
- align-items: center;
- font-size: 20px;
- font-family: ‘Open Sans’;
- font-weight: 900;
- color: #202020;
- cursor: pointer;
-}
-.count{
- font-size: 20px;
- font-family: ‘Open Sans’;
- font-weight: 900;
- color: #202020;
-}
-}
-	
-hr{
- width: 66%;
- float: right;
- margin-right: 5%;
-}
-.checkout{
- float: right;
- margin-right: 5%;
- width: 28%;
-}
-.total{
- width: 100%;
- display: flex;
- justify-content: space-between;
-}
-.Subtotal{
- font-size: 22px;
- font-family: ‘Open Sans’;
- font-weight: 700;
- color: #202020;
-}
-.items{
- font-size: 16px;
- font-family: ‘Open Sans’;
- font-weight: 500;
- color: #909090;
- line-height: 10px;
-}
-.total-amount{
- font-size: 36px;
- font-family: ‘Open Sans’;
- font-weight: 900;
- color: #202020;
-}
-.button{
- margin-top: 5px;
- width: 100%;
- height: 40px;
- border: none;
- background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
- border-radius: 20px;
- cursor: pointer;
- font-size: 16px;
- font-family: ‘Open Sans’;
- font-weight: 600;
- color: #202020;
-}
-
-		</style>
-		</head>
+<head>
+	<title>Shopping Cart UI</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+</head>
 <body>
- <div class="Cart-Container">
-<div class=”Header”>
-        <h3 class=”Heading”>Shopping Cart</h3>
-        <h5 class=”Action”>Remove all</h5>
-</div>
-	
-  <div class="column-labels">
-    <label class="product-image">Image</label>
-    <label class="product-details">Product</label>
-    <label class="product-price">Price</label>
-    <label class="product-quantity">Quantity</label>
-    <label class="product-removal">Remove</label>
-    <label class="product-line-price">Total</label>
-  </div>
-	
-  <div class="product">
-    <div class="product-image">
-      <img src="https://sc04.alicdn.com/kf/HTB1t9X3NpXXXXbbXXXXq6xXFXXXJ.jpg" style={{ height="120px" }}>
-    </div>
-    <div class="product-details">
-      <div class="product-title">Plain Shirt</div>
-    </div>
-	  <div class="product-price">₹200</div>
-	  <div class="product-quantity">
-          <div class=”btn”>+</div>
-          <div class=”count”>2</div>
-          <div class=”btn”>-</div>
-          </div>
-    <div class="product-removal">
-      <button class="remove-product">
-        Remove
-      </button>
-    </div>
-    <div class="product-line-price">₹400</div>
-  </div>
+   <div class="CartContainer">
+   	   <div class="Header">
+   	   	<h3 class="Heading">Shopping Cart</h3>
+   	   	<h5 class="Action">Remove all</h5>
+   	   </div>
 
-  <div class="product">
-    <div class="product-image">
-      <img src="https://www.ethnicplus.in/media/catalog/product/cache/4b64c75550b309a25deb6b05458d8553/s/k/sky_soft_net_lahenga_1_.jpeg" style={{ height="120px" }}>
-    </div>
-    <div class="product-details">
-      <div class="product-title">Diamond bead lehenga</div>
-    </div>
-    <div class="product-price">₹4000</div>
-    <div class="product-quantity">
-          <div class=”btn”>+</div>
-          <div class=”count”>2</div>
-          <div class=”btn”>-</div>
-    </div>
-    <div class="product-removal">
-      <button class="remove-product">
-        Remove
-      </button>
-    </div>
-    <div class="product-line-price">₹4000</div>
-  </div>
-	
-	<hr> 
- <div class=”checkout”>
- <div class=”total”>
- <div>
- <div class=”Subtotal”>Sub-Total</div>
- <div class=”items”>3 items</div>
- </div>
- <div class=”total-amount”>₹4400</div>
- </div>
- <button class=”button”>Checkout</button>
- </div>
+   	   <div class="Cart-Items">
+   	   	  <div class="image-box">
+   	   	  	<img src="images/apple.png" style={{ height="120px" }} />
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h1 class="title">Apple Juice</h1>
+   	   	  	<h3 class="subtitle">250ml</h3>
+   	   	  	<img src="images/veg.png" style={{ height="30px" }}/>
+   	   	  </div>
+   	   	  <div class="counter">
+   	   	  	<div class="btn">+</div>
+   	   	  	<div class="count">2</div>
+   	   	  	<div class="btn">-</div>
+   	   	  </div>
+   	   	  <div class="prices">
+   	   	  	<div class="amount">$2.99</div>
+   	   	  	<div class="save"><u>Save for later</u></div>
+   	   	  	<div class="remove"><u>Remove</u></div>
+   	   	  </div>
+   	   </div>
 
- <! <div class="totals">
-    <div class="totals-item">
-      <label>Subtotal</label>
-      <div class="totals-value" id="cart-subtotal">71.97</div>
-    </div>
-    <div class="totals-item">
-      <label>Tax (5%)</label>
-      <div class="totals-value" id="cart-tax">3.60</div>
-    </div>
-    <div class="totals-item">
-      <label>Shipping</label>
-      <div class="totals-value" id="cart-shipping">15.00</div>
-    </div>
-    <div class="totals-item totals-item-total">
-      <label>Grand Total</label>
-      <div class="totals-value" id="cart-total">90.57</div>
-    </div>
-  </div>
-      
-      <button class="checkout">Checkout</button> >
-
-</div> 
-	</body >
+   	   <div class="Cart-Items pad">
+   	   	  <div class="image-box">
+   	   	  	<img src="images/grapes.png" style={{ height="120px" }} />
+   	   	  </div>
+   	   	  <div class="about">
+   	   	  	<h1 class="title">Grapes Juice</h1>
+   	   	  	<h3 class="subtitle">250ml</h3>
+   	   	  	<img src="images/veg.png" style={{ height="30px" }}/>
+   	   	  </div>
+   	   	  <div class="counter">
+   	   	  	<div class="btn">+</div>
+   	   	  	<div class="count">1</div>
+   	   	  	<div class="btn">-</div>
+   	   	  </div>
+   	   	  <div class="prices">
+   	   	  	<div class="amount">$3.19</div>
+   	   	  	<div class="save"><u>Save for later</u></div>
+   	   	  	<div class="remove"><u>Remove</u></div>
+   	   	  </div>
+   	   </div>
+   	 <hr> 
+   	 <div class="checkout">
+   	 <div class="total">
+   	 	<div>
+   	 		<div class="Subtotal">Sub-Total</div>
+   	 		<div class="items">2 items</div>
+   	 	</div>
+   	 	<div class="total-amount">$6.18</div>
+   	 </div>
+   	 <button class="button">Checkout</button></div>
+   </div>
+</body>
 </html>
