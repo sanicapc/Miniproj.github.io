@@ -55,15 +55,7 @@ body{
  color: #202020;
 }
 	
-.product1{
- margin: auto;
- width: 90%;
- height: 30%;
- display: flex;
- justify-content: space-between;
- align-items: center;
-}
-.product2{
+.product{
  margin: auto;
  width: 90%;
  height: 30%;
@@ -194,8 +186,9 @@ hr{
     <label class="product-removal">Remove</label>
     <label class="product-line-price">Total</label>
   </div>
-	
-  <div1 class1="product1">
+
+<p id="del1">
+  <div class="product">
     <div class="product-image">
       <img src="https://sc04.alicdn.com/kf/HTB1t9X3NpXXXXbbXXXXq6xXFXXXJ.jpg" style={{ height="120px" }}>
     </div>
@@ -209,12 +202,14 @@ hr{
           <button onclick="decrement()">-</button>
           </div>
     <div class="product-removal">
-      <button onclick="myFunction()">Remove</button>
+      <button onclick="myFunction1()">Remove</button>
     </div>
     <div class="product-line-price">₹400</div>
-  </div1>
+  </div>
+</p>
 
-  <div2 class2="product2">
+<p id="del2">
+   <div class="product">
     <div class="product-image">
       <img src="https://www.ethnicplus.in/media/catalog/product/cache/4b64c75550b309a25deb6b05458d8553/s/k/sky_soft_net_lahenga_1_.jpeg" style={{ height="120px" }}>
     </div>
@@ -228,10 +223,11 @@ hr{
           <button onclick="decrement2()">-</button>
     </div>
     <div class="product-removal">
-      <button onclick="myFunction()">Remove</button>
+      <button onclick="myFunction2()">Remove</button>
     </div>
     <div class="product-line-price">₹4000</div>
-  </div2>
+  </div>
+</p>
 	
 <hr> 
  <div class="Checkout">
@@ -271,13 +267,14 @@ hr{
                 document.getElementById("counting1").innerText = data1;
             }
 	    
-	    function myFunction() {
-                if(document.getElementsByTagName("div1")[0])
-		{ removeAttribute("class1"); 
-		}
-		else if((document.getElementsByTagName("div2")[0])
-		{ removeAttribute("class2"); 
-	        }
+	    function myFunction1() {
+		    const element = document.getElementById("del1");
+		    element.remove();
+	    }
+	
+	    function myFunction2() {
+		    const element = document.getElementById("del2");
+		    element.remove();
 	    }
 </script>
 	
