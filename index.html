@@ -215,9 +215,9 @@ hr{
     </div>
     <div class="product-price">₹4000</div>
     <div class="product-quantity">
-	  <button class="button">+</button>
+	  <button onclick="increment1()">+</button>
           <h4 id="counting1"></h4>
-          <button class="button">-</button>
+          <button onclick="decrement2()">-</button>
     </div>
     <div class="product-removal">
       <button class="remove-product">
@@ -258,11 +258,11 @@ hr{
 	   var data1 = 1;
 	   document.getElementById("counting1").innerText = data1;
   
-            function increment() {
+            function increment1() {
                 data1 = data1 + 1;
                 document.getElementById("counting1").innerText = data1;
             }
-            function decrement() {
+            function decrement2() {
                 data1 = data1 - 1;
                 document.getElementById("counting1").innerText = data1;
             }
