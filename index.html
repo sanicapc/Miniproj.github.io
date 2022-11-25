@@ -187,7 +187,7 @@ hr{
     <label class="product-line-price">Total</label>
   </div>
 	
-  <div1 class="product">
+  <div1 class1="product">
     <div class="product-image">
       <img src="https://sc04.alicdn.com/kf/HTB1t9X3NpXXXXbbXXXXq6xXFXXXJ.jpg" style={{ height="120px" }}>
     </div>
@@ -206,7 +206,7 @@ hr{
     <div class="product-line-price">₹400</div>
   </div1>
 
-  <div2 class="product">
+  <div2 class2="product">
     <div class="product-image">
       <img src="https://www.ethnicplus.in/media/catalog/product/cache/4b64c75550b309a25deb6b05458d8553/s/k/sky_soft_net_lahenga_1_.jpeg" style={{ height="120px" }}>
     </div>
@@ -264,7 +264,12 @@ hr{
             }
 	    
 	    function myFunction() {
-                document.getElementsByTagName("div1")[0].removeAttribute("class"); 
+                if(document.getElementsByTagName("div1")[0])
+		{ removeAttribute("class1"); 
+		}
+		else if((document.getElementsByTagName("div2")[0])
+		{ removeAttribute("class2"); 
+	        }
 	    }
 </script>
 	
