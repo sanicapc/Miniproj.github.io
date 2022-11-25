@@ -91,24 +91,18 @@ body{
  justify-content: space-between;
  align-items: center;
 }
-.btn{
- width: 40px;
- height: 40px;
- border-radius: 50%;
- background-color: #d9d9d9;
- display: flex;
- justify-content: center;
- align-items: center;
- font-size: 20px;
- font-family: ‘Open Sans’;
- font-weight: 900;
- color: #202020;
- cursor: pointer;
+	
+.button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: green;
+    color: honeydew;
 }
-
-.btn:hover {
-  background-color: #4CAF50;
-  color: white;
+  
+.button:hover {
+    background-color: greenyellow;
+    color: grey;
 }
 	
 .count{
@@ -200,9 +194,9 @@ hr{
     </div>
 	  <div class="product-price">₹200</div>
 	  <div class="product-quantity">
-          <button class="btn">+</button>
+	  <button onclick="increment()">+</button>
           <div class=”count”>2</div>
-          <button class="btn">-</button>
+          <button onclick="decrement()">-</button>
           </div>
     <div class="product-removal">
       <button class="remove-product">Remove</button>
@@ -243,6 +237,22 @@ hr{
  <button class=”button”>Checkout</button>
  </div>
 
-</div> 
-</body >
+</div>
+	
+<script>
+            var data = 0;
+
+            document.getElementById("counting").innerText = data;
+  
+            function increment() {
+                data = data + 1;
+                document.getElementById("counting").innerText = data;
+            }
+            function decrement() {
+                data = data - 1;
+                document.getElementById("counting").innerText = data;
+            }
+</script>
+	
+</body>
 </html>
