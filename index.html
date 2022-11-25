@@ -84,7 +84,7 @@ body{
  font-family: ‘Open Sans’;
  font-weight: 600;
  color: #909090;
-	
+}	
 .product-quantity{
  width: 15%;
  display: flex;
@@ -123,6 +123,11 @@ body{
  margin: 0 50px;
  font-size: 30px;
 }
+
+.h4 {
+ color: black;
+ margin: 0 50px;
+ font-size: 30px;
 }
 	
 hr{
@@ -211,7 +216,7 @@ hr{
     <div class="product-price">₹4000</div>
     <div class="product-quantity">
 	  <button class="btn">+</button>
-          <h2 id="counting"></h2>
+          <h4 id="counting"></h4>
           <button class="btn">-</button>
     </div>
     <div class="product-removal">
@@ -237,7 +242,7 @@ hr{
 </div>
 	
 <script>
-            var data = 0;
+            var data = 1;
 
             document.getElementById("counting").innerText = data;
   
