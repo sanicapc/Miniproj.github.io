@@ -120,13 +120,13 @@ body{
 	
 .h2 {
  color: black;
- margin: 0 50px;
+ margin: 50px;
  font-size: 30px;
 }
 
 .h4 {
  color: black;
- margin: 0 50px;
+ margin: 50px;
  font-size: 30px;
 }
 	
@@ -216,7 +216,7 @@ hr{
     <div class="product-price">₹4000</div>
     <div class="product-quantity">
 	  <button class="btn">+</button>
-          <h4 id="counting"></h4>
+          <h4 id="counting1"></h4>
           <button class="btn">-</button>
     </div>
     <div class="product-removal">
@@ -243,9 +243,7 @@ hr{
 	
 <script>
             var data = 1;
-
             document.getElementById("counting").innerText = data;
-  
             function increment() {
                 data = data + 1;
                 document.getElementById("counting").innerText = data;
@@ -253,6 +251,18 @@ hr{
             function decrement() {
                 data = data - 1;
                 document.getElementById("counting").innerText = data;
+            }
+	
+	   var data1 = 1;
+	   document.getElementById("counting1").innerText = data1;
+  
+            function increment() {
+                data = data + 1;
+                document.getElementById("counting1").innerText = data1;
+            }
+            function decrement() {
+                data = data - 1;
+                document.getElementById("counting1").innerText = data1;
             }
 </script>
 	
