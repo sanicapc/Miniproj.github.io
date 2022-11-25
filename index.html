@@ -186,7 +186,8 @@ hr{
     <label class="product-removal">Remove</label>
     <label class="product-line-price">Total</label>
   </div>
-	
+
+<p id="delete">	
   <div class="product">
     <div class="product-image">
       <img src="https://sc04.alicdn.com/kf/HTB1t9X3NpXXXXbbXXXXq6xXFXXXJ.jpg" style={{ height="120px" }}>
@@ -201,11 +202,13 @@ hr{
           <button onclick="decrement()">-</button>
           </div>
     <div class="product-removal">
-      <button class="remove-product">Remove</button>
+      <button onclick="myFunction()">Remove</button>
     </div>
     <div class="product-line-price">₹400</div>
   </div>
+</p>
 
+<p id="delete">
   <div class="product">
     <div class="product-image">
       <img src="https://www.ethnicplus.in/media/catalog/product/cache/4b64c75550b309a25deb6b05458d8553/s/k/sky_soft_net_lahenga_1_.jpeg" style={{ height="120px" }}>
@@ -220,15 +223,14 @@ hr{
           <button onclick="decrement2()">-</button>
     </div>
     <div class="product-removal">
-      <button class="remove-product">
-        Remove
-      </button>
+      <button onclick="myFunction()">Remove</button>
     </div>
     <div class="product-line-price">₹4000</div>
   </div>
+</p>
 	
-	<hr> 
- <div class="Proceed to Payment">
+<hr> 
+ <div class="Checkout">
  <div class="total">
  <div>
  <div class=”Subtotal”>Sub-Total</div>
@@ -236,7 +238,7 @@ hr{
  </div>
  <div class=”total-amount”>₹4400</div>
  </div>
- <button class=”button”>Checkout</button>
+ <button class=”button”>Proceed to Payment</button>
  </div>
 
 </div>
@@ -252,9 +254,7 @@ hr{
                 data = data - 1;
                 document.getElementById("counting").innerText = data;
             }
-</script>
-	
-<script>
+
 	   var data1 = 1;
 	   document.getElementById("counting1").innerText = data1;
   
@@ -266,6 +266,11 @@ hr{
                 data1 = data1 - 1;
                 document.getElementById("counting1").innerText = data1;
             }
+	
+	    function myFunction() {
+                const element = document.getElementById("delete");
+                 element.remove();
+	    }
 </script>
 	
 </body>
